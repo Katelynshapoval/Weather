@@ -27,11 +27,6 @@ body {
   }
 }
 
-/* Container for the weatherBlock */
-.container {
-  /* Optional styles can be added here for future use */
-}
-
 /* Weather block styling */
 .weatherBlock {
   height: 400px;
