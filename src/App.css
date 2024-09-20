@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+/* Global box-sizing rule for all elements */
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Body styling for centering content vertically and horizontally */
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(177deg, #61e020, #7832d8, #e9ae4e, #7b1079);
+  background-size: 240% 240%;
+  animation: gradient-animation 20s ease infinite; /* Gradient animation */
 }
 
-.App-link {
-  color: #61dafb;
+/* Gradient background animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container for the weatherBlock */
+.container {
+  /* Optional styles can be added here for future use */
+}
+
+/* Weather block styling */
+.weatherBlock {
+  height: 400px;
+  width: 400px;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+/* Spacing between paragraphs inside the weatherBlock */
+.weatherBlock p {
+  margin: 4px;
+}
+
+/* Weather icon styling */
+.weatherIcon {
+  width: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 24px auto; /* Centers the icon */
+}
+
+/* Input styling for search field */
+input {
+  height: 35px;
+  width: 200px;
+  margin-right: 7px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+/* Form styling: centers input and button */
+form {
+  display: flex;
+  justify-content: center; /* Centers input and button horizontally */
+  align-items: center; /* Centers input and button vertically */
+}
+
+/* Button styling for search button */
+.searchButton {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+
+  display: flex;
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  cursor: pointer;
+}
+
+/* Search icon inside the button */
+.searchIcon {
+  height: 15px;
+}
+
+/* Wind and humidity info: aligns image and text next to each other */
+.wind-info .inline,
+.humidity-info .inline {
+  display: inline-block; /* Align items horizontally */
+  vertical-align: middle; /* Vertically align image and text */
+}
+
+/* Wind and humidity icons */
+.wind-info img,
+.humidity-info img {
+  margin-left: 8px; /* Space between text and image */
+  height: 20px; /* Icon size */
 }
