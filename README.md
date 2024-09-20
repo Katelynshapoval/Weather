@@ -1,3 +1,33 @@
+# React Weather App
+
+This is a simple weather application built with React that fetches weather data from the [OpenWeatherMap API](https://openweathermap.org/). The app allows users to input a city name and receive real-time weather information such as temperature, weather description, wind speed, and humidity. The background and icons update dynamically based on the weather and time of day (day or night).
+
+## Features
+
+- Search for weather information by city name.
+- Displays current temperature, weather conditions, wind speed, and humidity.
+- Dynamically updates background and icons based on the weather and time of day.
+- Handles loading states and errors gracefully.
+
+## Demo
+
+![Weather App Screenshot](path-to-screenshot.png)
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your machine.
+- A valid API key from [OpenWeatherMap](https://openweathermap.org/).
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/react-weather-app.git
+   ```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
